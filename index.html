@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="nl">
+<head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="legospelen.nl">
@@ -7,22 +8,41 @@
 <link rel="icon" type="image/gif" href="lego-coin.gif">
 <title>legospelen.nl</title>
 <style>
-html, body { height: 100%; }
-body {
-margin: 0;
-display: flex;
-align-items: center;
-justify-content: center;
-background: #fff;
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Arial Black', Arial, sans-serif;
 }
-img {
-width: 100vw;
-height: 100vh;
-object-fit: contain;
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: url('lego-background.png') no-repeat center center;
+    background-size: cover;
+    padding: 20px;
+    color: #fff;
+}
+
+#lego-logo {
+    width: 200px;
+    height: auto;
+}
+
+#set-info {
+    margin-top: 1.5rem;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-shadow: #000 1px 0 10px;
 }
 </style>
 </head>
 <body>
-<img src="lego.svg" alt="LEGO">
+<img id="lego-logo" src="lego.svg" alt="LEGO">
+<div id="set-info">legospelen.nl</div>
 </body>
 </html>
